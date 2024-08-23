@@ -1,0 +1,130 @@
+.news-feed {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.category-select {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.category-select label {
+    font-weight: bold;
+}
+
+.category-select select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    transition: transform 0.3s;
+}
+
+.news-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 390px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 20px 10px auto;
+}
+
+.news-card img {
+    width: 100%;
+    height: 55%;
+    object-fit: cover;
+}
+
+.news-card-content {
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.news-card h3 {
+    font-size: 18px;
+    margin: 15px 0 10px;
+    padding: 10px 10px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.news-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.news-card a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: auto;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+}
+
+.news-card-footer {
+    text-align: center;
+}
+
+.news-card a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .news-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .news-card img {
+        height: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-select select {
+        font-size: 14px;
+    }
+
+    .news-card h3 {
+        font-size: 16px;
+    }
+
+    .news-card p {
+        font-size: 12px;
+    }
+
+    .news-card img {
+        height: 30%;
+    }
+}
