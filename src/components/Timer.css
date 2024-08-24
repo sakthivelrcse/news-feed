@@ -1,0 +1,17 @@
+/* src/components/Timer.css */
+.timer {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+  }
+  
+  .timer h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .timer p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
